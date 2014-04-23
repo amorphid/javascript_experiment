@@ -20,7 +20,15 @@ function setMainHeight(){
   var f  = $("footer").height();
   var p2 = setMainPadding() * 2;
   var nonMainHeight = h + f + p2;
-  return w - nonMainHeight;
+  var calculatedHeight = w - nonMainHeight;
+
+  if (
+    calculatedHeight > $("body").height()
+  ) {
+    calculatedHeight
+  } else {
+    $("body").height()
+  }
 }
 
 // sets <main> padding
