@@ -1,3 +1,18 @@
+// sets <footer> style
+function setHeaderStyle(){
+  $("header").css({
+    "background-color": "orange",
+    "font-size": "0.5in"
+  });
+}
+
+function setFooterStyle(){
+  $("footer").css({
+    "background-color": "orange",
+    "font-size": "0.5in"
+  });
+}
+
 // sets <main> height
 function setMainHeight(){
   var w  = $(window).height();
@@ -10,7 +25,7 @@ function setMainHeight(){
 
 // sets <main> padding
 function setMainPadding(){
-  return 15;
+  return 72;
 }
 
 // sets <main> style
@@ -32,6 +47,8 @@ function setMainWellStyle(){
 
 // sets style(s) on page
 function setStyles(){
+  setHeaderStyle()
+  setFooterStyle();
   setMainStyle();
   setMainWellStyle();
 }
