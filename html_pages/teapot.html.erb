@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--
+      There's probably a better way to load CSS and JavaScript files.
+      Link and script tags, worked on straight HTML page, but not in Rack app.
+      Debug later.
+    -->
+    <style>
+      <%= File.read("./stylesheets/html5doctor.com_reset.css") %>
+    </style>
+    <script>
+      <%= File.read("./javascripts/jquery.js") %>
+    </script>
+    <script>
+      <%= File.read("./javascripts/css.js") %>
+    </script>
+  </head>
+  <body>
+    <header>
+      I am the header
+    </header>
+    <main>
+      <div class="main-well">
+      </div>
+    </main>
+    <footer>
+      I am the footer
+    </footer>
+  </body>
+</html>
