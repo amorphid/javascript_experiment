@@ -1,4 +1,10 @@
 // sets <footer> style
+function setBodyStyle(){
+  $("body").css({
+    "line-height": "normal"
+  });
+}
+
 function setHeaderStyle(){
   $("header").css({
     "background-color": "orange",
@@ -25,7 +31,7 @@ function setMainHeight(){
 
 // sets <main> padding
 function setMainPadding(){
-  return 72;
+  return "72";
 }
 
 // sets <main> style
@@ -33,7 +39,7 @@ function setMainStyle(){
   $("main").css({
     "background-color": "green",
     "height": setMainHeight(),
-    "padding": setMainPadding()
+    "padding": "72"
   });
 }
 
@@ -47,7 +53,8 @@ function setMainWellStyle(){
 
 // sets style(s) on page
 function setStyles(){
-  setHeaderStyle()
+  setBodyStyle();
+  setHeaderStyle();
   setFooterStyle();
   setMainStyle();
   setMainWellStyle();
